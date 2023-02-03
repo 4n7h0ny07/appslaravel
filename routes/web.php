@@ -26,3 +26,13 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+//nuevas rutas
+
+Route::get('/admin/saludo', function(){
+    return 'hola desde laravel';
+});//->middleware("auth");
+
+Route::get('/admin/life', function(){
+    return 'hola desde laravel';
+});//->middleware("auth");
